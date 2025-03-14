@@ -1,0 +1,116 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  min-height: 4rem;
+  background: var(--bg-color);
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  width: min(var(--max-width), 100% - var(--padding) * 2);
+  margin-inline: auto;
+}
+
+.menuAndLogo,
+.moreAndUser {
+  display: flex;
+  align-items: center;
+}
+
+.menuAndLogo .menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.menuAndLogo .menu:hover {
+  background: var(--smokeyWhite);
+}
+
+.menuAndLogo .logo {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.logo .logoIcon {
+  width: 1.75rem;
+  aspect-ratio: 1/1;
+}
+
+.logo .logoTxt {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.moreAndUser .more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 3rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  font-size: 0.7rem;
+  color: var(--fadedBlack);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.moreAndUser .more:hover {
+  background: var(--smokeyWhite);
+}
+
+.more .row:first-child {
+  transform: translateY(7px);
+}
+.more .row:last-child {
+  transform: translateY(-7px);
+}
+
+.moreAndUser .user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.moreAndUser .user:hover {
+  background: var(--smokeyWhite);
+}
+
+.moreAndUser .user i {
+  font-size: 2rem;
+  color: var(--fadedBlack);
+}
+
+.colored {
+  color: var(--fadedBlack);
+}
+
+@media (max-width: 768px) {
+  .logo .logoTxt {
+    font-size: 1.25rem;
+  }
+  .moreAndUser .more {
+    display: none;
+  }
+  .menuAndLogo .menu {
+    margin-left: -0.75rem;
+  }
+}

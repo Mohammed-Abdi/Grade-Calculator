@@ -1,0 +1,9 @@
+:root {
+  --bg-color: #fff;
+  --smokeyWhite: #f5f5f7;
+  --txt-color: #000;
+  --fadedBlack: #444747;
+  /* sizes */
+  --max-width: 1200px;
+  --padding: 1.25rem;
+}
